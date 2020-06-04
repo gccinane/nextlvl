@@ -40,7 +40,7 @@ const CreatePoint: React.FC = () => {
     whatsapp: ''
   })
   const [selectedItems, setSelectedItems] = useState<number[]>([])
-  const history = useHistory();
+  const history = useHistory()
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(position => {
       const {latitude, longitude} = position.coords;
@@ -130,6 +130,7 @@ const CreatePoint: React.FC = () => {
     alert('Ponto de coleta criado');
 
     history.push('/')
+
   }
 
   return (

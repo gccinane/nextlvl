@@ -34,13 +34,17 @@ const CreatePoint: React.FC = () => {
   const [selectedCity, setSelectedCity] = useState('0');
   const [selectedPosition, setSelectedPosition] = useState<[number, number]>([0,0])
   const [initialPosition, setinitialPosition] = useState<[number, number]>([0,0])
+
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     whatsapp: ''
   })
+
   const [selectedItems, setSelectedItems] = useState<number[]>([])
   const history = useHistory()
+  
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(position => {
       const {latitude, longitude} = position.coords;

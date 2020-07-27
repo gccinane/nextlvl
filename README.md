@@ -25,6 +25,8 @@ Leaflet
 Axios
 Sqlite3
 Celebrate/Joi
+
+![](ecoleta.gif)
 Front-end Mobile
 
 axios
